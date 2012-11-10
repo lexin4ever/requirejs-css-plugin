@@ -28,7 +28,7 @@ paths: {
 	css: 'css-built'
 }
 ```
-### Example
+## Example
 This repository is a perfect usage example.
 
 ## License
