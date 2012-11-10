@@ -1,4 +1,4 @@
-### requirejs plugin to load css files
+### a requirejs plugin to load css files
 ## take the best of both methods
 
 before optimization, the method is to load the css file by a `link` element.
@@ -14,7 +14,7 @@ css.js			//before optimization
 css-build.js	//during optimization
 css-built.js	//during optimization
 ```
-load a css file by the requirejs plugin syntax
+load css files by the requirejs plugin syntax
 ```
 requirejs(['css!style.css','css!more.css','othermodules'],function(css1,css2,c){
 	//css loaded, but I cannot be sure that they are already parsed by browser.
@@ -28,7 +28,7 @@ paths: {
 	css: 'css-built'
 }
 ```
-
+# Finally
 This repository is a perfect usage example.
 
 ## License
