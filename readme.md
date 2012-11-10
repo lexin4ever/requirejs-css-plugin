@@ -1,4 +1,4 @@
-### a requirejs plugin to load css files
+# a requirejs plugin to load css files
 ## take the best of both methods
 
 before optimization, the method is to load the css file by a `link` element.
@@ -28,7 +28,7 @@ paths: {
 	css: 'css-built'
 }
 ```
-# Finally
+### Example
 This repository is a perfect usage example.
 
 ## License
