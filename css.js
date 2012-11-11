@@ -16,7 +16,7 @@ define({
 			link.type = 'text/css';
 			head.appendChild(link);
 		}
-		inject(name);
+		inject(config.baseUrl+name);
 		load(true);
 	}
 });
