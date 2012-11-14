@@ -31,6 +31,9 @@ paths: {
 ## Example
 This repository is a perfect usage example.
 
+## Notes
+There is a more powerful library having same intention as this one. If you need more power, try [guybedford/require-css]/(http://github.com/guybedford/require-css).
+
 ## License
 Copyright (c) 2012 Chris Tsang
 
