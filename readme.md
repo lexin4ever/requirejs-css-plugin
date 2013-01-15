@@ -3,16 +3,15 @@
 
 before optimization, the method is to load the css file by a `link` element.
 
-during optimization, the optimizer embed the contents of css files into a module.
+during optimization, the optimizer writes the content of css files into modules.
 
-after optimization, the method is to inject the styles into the HTML doc by a `style` element.
+after optimization, the modules inject styles into the HTML doc by a `style` element.
 
 ## Usage
-you'll need three files,
+you'll need two files,
 ```
 css.js			//before optimization
-css-build.js	//during optimization
-css-built.js	//during optimization
+css-build.js	//for optimization
 ```
 load css files by the requirejs plugin syntax
 ```
@@ -20,14 +19,11 @@ requirejs(['css!style.css','css!more.css','othermodules'],function(css1,css2,c){
 	//css loaded, but I cannot be sure that they are already parsed by browser.
 });
 ```
-multiple css files will be combined into one block, and injected once only after optimization.
+perform optimization by
+```
+node r.js -o build.js
+```
 
-in a build profile, be sure to replace css with css-built:
-```
-paths: {
-	css: 'css-built'
-}
-```
 ## Example
 This repository is a perfect usage example.
 
